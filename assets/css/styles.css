@@ -47,6 +47,16 @@ a{
     letter-spacing: -0.02em;
 }
 
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1); /* default 1 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.break-all{
+    word-break: break-all;
+}
+
 
 /* Header */
 .header{
@@ -302,10 +312,12 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-.popular .course-item .title{
+.popular .course-item .title a{
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67; /* 166.667% */
+    color: #171100;
+    padding-right: 4px;
 }
 .popular .rating .value{
     margin-left: 6px;
